@@ -77,20 +77,7 @@ public class Cliente {
 		return Objects.hash(cpf_cliente, email_cliente, id_cliente, nome_cliente, senha_cliente);
 	}
 
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Cliente other = (Cliente) obj;
-		return Objects.equals(cpf_cliente, other.cpf_cliente) && Objects.equals(email_cliente, other.email_cliente)
-				&& id_cliente == other.id_cliente && Objects.equals(nome_cliente, other.nome_cliente)
-				&& Objects.equals(senha_cliente, other.senha_cliente);
-	}
-
+	
 	@Override
 	public String toString() {
 		return "Cliente [id_cliente=" + id_cliente + ", nome_cliente=" + nome_cliente + ", cpf_cliente=" + cpf_cliente
