@@ -32,16 +32,6 @@ public class Cliente {
 	@Column(name = "senha_cliente")
 	private String senha_cliente;
 
-	public Cliente(int id_cliente, String nome_cliente, String cpf_cliente, String email_cliente,
-			String senha_cliente) {
-		super();
-		this.id_cliente = id_cliente;
-		this.nome_cliente = nome_cliente;
-		this.cpf_cliente = cpf_cliente;
-		this.email_cliente = email_cliente;
-		this.senha_cliente = senha_cliente;
-	}
-
 	public int getId_cliente() {
 		return id_cliente;
 	}
